@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *  main - it prints a line using puts built in function
+ *  main - program prints a line using puts function
  * if zero returned this mean that the main function got excuted (Success)
  */
 int main(void)
