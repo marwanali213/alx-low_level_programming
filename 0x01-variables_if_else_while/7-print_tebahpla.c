@@ -4,7 +4,6 @@
  * main - entry point
  * Return: 0(Success)
  */
-
 int main(void)
 {
 	char letter = 'z';
@@ -14,7 +13,6 @@ int main(void)
 	putchar(letter);
 	letter--;
 	}
-	putchar('\n');
-	
+	putchar('\n');	
 	return (0);
 }
