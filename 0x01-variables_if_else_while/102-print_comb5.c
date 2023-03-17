@@ -2,12 +2,12 @@
 
 /**
  * main - entry point
- *
  * Return: 0(Success)
  */
 int main(void)
 {
 	int i, j;
+
 	for (i = 0; i < 100; i++)
 	{
 		for (j = i; j < 100; j++)
@@ -28,6 +28,8 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+
+putchar('\n');
+
+return (0);
 }
