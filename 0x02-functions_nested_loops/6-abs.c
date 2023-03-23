@@ -2,7 +2,7 @@
 
 /**
  * _abs - computes the absolute value for an interger
- * and n: interger to be tested
+ * @n: interger to be tested
  * Return: 0 or 1
  */
 
