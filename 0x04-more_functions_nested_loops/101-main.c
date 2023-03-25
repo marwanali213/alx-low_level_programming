@@ -17,4 +17,4 @@ int main(void)
     _putchar('\n');
     print_number(-98);
     _putchar('\n');
-    retu
+    retiu
