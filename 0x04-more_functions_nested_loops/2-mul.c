@@ -10,6 +10,7 @@
  * Example:
  *      mul(4 * 5) ---> 20
  */
+
 int mul(int num1, int num2)
 {
 	int result = 0;
