@@ -14,39 +14,71 @@
  *         memory which contains the contents of s1, followed by the contents 
  *         of s2, and null terminated
  */
-
 char *str_concat(char *s1, char *s2)
+		
 {
-	int a, b;
-	char *s;
+		
+	char *conct;
+		
+	int i, ci;
+		
 
+		
 	if (s1 == NULL)
-	{
+		
 		s1 = "";
-	}
+		
 	if (s2 == NULL)
-	{
+		
 		s2 = "";
-	}
-	for (a = 0; s1[a] != '\0'; a++)
-	{
-	}
-	for (b = 0; s2[b] != '\0'; b++)
-	{
-	}
+		
 
-	s = (char *)  malloc(((a + b) + 1) * sizeof(char));
+		
+		i = ci = 0;
+		
+	while (s1[i] != '\0')
+		
+		i++;
+		
+	while (s2[ci] != '\0')
+		
+		ci++;
+		
+	conct = malloc(sizeof(char) * (i + ci + 1));
+		
 
-	if (s == NULL)
+		
+	if (conct == NULL)
+		
 		return (NULL);
-	for (a = 0; s1[a] != '\0'; a++)
+		
+	i = ci = 0;
+		
+	while (s1[i] != '\0')
+		
 	{
-		s[a] = s1[a];
+		
+		conct[i] = s1[i];
+		
+		i++;
+		
 	}
-	for (b = 0; s2[b] != '\0'; b++)
+		
+
+		
+	while (s2[ci] != '\0')
+		
 	{
-		s[a] = s2[b];
-		a++;
+		
+		conct[i] = s2[ci];
+		
+		i++, ci++;
+		
 	}
-	return (s);
+		
+	conct[i] = '\0';
+		
+	return (conct);
+		
 }
+

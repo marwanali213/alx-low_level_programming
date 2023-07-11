@@ -11,23 +11,43 @@
  *         NULL if insufficient memory was available
  */
 char *_strdup(char *str)
+		
 {
-	char *s;
-	int a, b;
+		
+	char *aaa;
+		
+	int i, r = 0;
+		
 
+		
 	if (str == NULL)
+		
 		return (NULL);
+		
+	i = 0;
+		
+	while (str[i] != '\0')
+		
+		i++;
+		
 
-	for (a = 0; str[a] != '\0'; a++)
-		;
-	s = (char *)  malloc((a + 1) * sizeof(char));
+		
+	aaa = malloc(sizeof(char) * (i + 1));
+		
 
-	if (s == NULL)
+		
+	if (aaa == NULL)
+		
 		return (NULL);
+		
 
-	for (b = 0; b < a ; b++)
-		s[b] = str[b];
+		
+	for (r = 0; str[r]; r++)
+		
+		aaa[r] = str[r];
+		
 
-	s[a + 1] = '\0';
-	return (s);
+		
+	return (aaa);
+		
 }
